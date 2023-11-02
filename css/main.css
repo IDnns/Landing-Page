@@ -6,6 +6,131 @@
     box-sizing: border-box;
 }
 
+nav {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+
+.navbar-css img {
+    height: 35px;
+    width: auto;
+    object-fit: cover;
+    margin-left: 3vw;
+    cursor: pointer;
+}
+
+.nav_menu {
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 533px;
+    height: 35px;
+    text-align: center;
+}
+
+.nav_menu button {
+    color: white;
+    width: 100px;
+    height: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    background: none;
+    border-style: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.nav_menu button:hover {
+    color: #ff000d;
+    background-color: #fff;
+    transition: 0.2s ease-in;
+}
+
+.iniciar_s button {
+    border-radius: 50px;
+    background-color: white;
+    font-weight: 600;
+    color: #a93339;
+    width: 100px;
+    margin-left: 1vw;
+}
+
+/* Responsive */
+
+.nav_label {
+    width: 40px;
+    display: flex;
+    margin-right: 3vw;
+}
+
+.nav_label img {
+    width: 30px;
+    height: 100%;
+    margin: 0;
+    align-items: start;
+}
+
+.nav_label,
+.nav_input {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .nav_label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav_menu button:hover {
+        background-color: rgba(29, 39, 61, 0);
+    }
+
+    .nav_menu .first {
+        margin-top: 3vh;
+    }
+
+    .nav_menu button {
+        margin-left: 50%;
+        background: none;
+        border-style: none;
+        color: white;
+        width: 60%;
+        border-radius: 0px;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .nav_menu {
+        position: fixed;
+        top: 30px;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        width: 90%;
+        grid-template-columns: 1fr;
+        clip-path: inset(0% 0% 0% 100%);
+        transition: clip-path 0.3s ease-in;
+    }
+
+    .iniciar_s {
+        margin-bottom: 65vh;
+    }
+
+    .nav_input:checked+.nav_menu {
+        clip-path: inset(0% 0% 0% 65%);
+        transition: clip-path 0.3s ease-out;
+    }
+}
+
 .banner img{
     width: 100%;
     height: 100%;
@@ -13,7 +138,7 @@
 
 body{
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 90%;
     font-family: 'Lato';
     color: rgb(63, 57, 57);
 }
@@ -193,6 +318,20 @@ header h1{
     cursor: pointer;
 }
 
+/*Responsive body*/
+
+.container-items{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.item{
+    width: 100%;
+}
+
+
+/* PIE DE PAGINA*/
 .pie-pagina{
     width: 100%;
     background-color: #ffff;
