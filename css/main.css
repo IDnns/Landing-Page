@@ -112,7 +112,7 @@ nav {
 
     .nav_menu {
         position: fixed;
-        top: 30px;
+        top: 90px;
         height: 100%;
         background: rgba(0, 0, 0, 0.9);
         width: 90%;
@@ -323,12 +323,14 @@ header h1{
 .container-items{
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
+    justify-content: space-between;
 }
 
 .item{
-    width: 100%;
+    flex-basis: 30%;
+    margin-bottom: 1em;
 }
+
 
 
 /* PIE DE PAGINA*/
