@@ -1,0 +1,39 @@
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Lato';
+    color: rgb(63, 57, 57);
+}
+
+.container-icon{
+    width: 40px;
+    height: 40px;
+}
+
+img{
+    max-width: 100%;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+header a img{
+    max-width: auto;
+    max-height: 40px;
+}
+
+header h1{
+    font-family: 'Rubik', sans-serif;
+}
